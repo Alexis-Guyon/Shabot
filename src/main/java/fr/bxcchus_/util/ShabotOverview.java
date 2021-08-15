@@ -21,7 +21,7 @@ public class ShabotOverview extends TimerTask {
         try {
             Shabot.id++;
             Status status = ShabotConfig.getTwitterInstance().updateStatus(ShabotConfig.getSummoner().getName() + " is currently " + tier + " " + division + "\n\ntweet id: " +Shabot.id);
-            status.getText();
+            System.out.println("[#" + Shabot.id + "] Overview\n");
         } catch (TwitterException e) {
             e.printStackTrace();
         }

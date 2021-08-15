@@ -24,7 +24,7 @@ public class ShabotConfig {
     }
     public static void getRiotApiKey() {
         try {
-            Orianna.setRiotAPIKey("RiotAPIKey");
+            Orianna.setRiotAPIKey("Riot API Key");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

@@ -14,7 +14,7 @@ public class ShabotMatch extends TimerTask {
                 if (ShabotConfig.getSummoner().isInGame()) {
                     Shabot.id++;
                     Status status = ShabotConfig.getTwitterInstance().updateStatus(ShabotConfig.getSummoner().getName() + " is currently in game \nhttps://porofessor.gg/live/euw/Noctogone" + "\n\ntweet id: " + Shabot.id++);
-                    status.getText();
+                    System.out.println("[#" + Shabot.id + "] Match\n");
                 }
             } catch (TwitterException e) {
                 e.printStackTrace();
